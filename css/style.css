@@ -1,0 +1,162 @@
+:root{/*Codigo para definir "variables"*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #00194e;
+    --secundario: #014f58;
+    --gris: #414141;
+}
+/*Usar ese code para todos los proyectos*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*scroll-snap-type: y proximity;  Este Comando es utilizado para que el mouse vaya por las secciones*/
+}
+
+.servicios,
+.navegacion_principal,
+.formulario{
+scroll-snap-align: center;
+scroll-snap-stop: always;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    background-image: url(../img/Back.jpg);
+    background-color: var(--oscuro);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+.sombra{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+img{
+    max-width: 100%;
+    
+}
+
+h1,h2,h3,h4{
+    color: var(--blanco);
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer{   
+    padding: 2rem;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    text-align: center;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    }
+.contacto{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Cuadro__imagen{
+    width: 18rem;
+    border-radius: 50%;
+    margin-left: 20%;
+}
+
+@media(min-width: 768px) {
+    .Cuadro__imagen{
+        width: 25rem;
+        border-radius: 50%;
+        margin-left: 4.5%;
+    }
+}
+
+.Cuadro{
+ /*   background-color: var(--primario);*/
+    background-color: #000000df;
+    padding: 5%;
+    border-radius: 10%;
+}
+
+@media(min-width: 768px) {
+    .Cuadro{
+        /*   background-color: var(--primario);*/
+           background-color: #000000df;
+           padding: 7%;
+           border-radius: 10%;
+       }
+}
+
+.grid{
+    display: grid;
+    justify-items: center; 
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.links{
+    text-decoration: none;
+}
+
+.Cuadro_resumen{
+    text-align: center;
+    color: #ffffff;
+    transition: color 1s ease;
+    font-family: 'Courier Prime', monospace;
+    font-size: 2rem;
+}
+
+.Cuadro_resumen:hover{
+    cursor: pointer;
+    color: #ffff0c;
+}
+
+.contacto{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.derechos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: (2, 1fr);
+}
+
+@media(min-width: 768px) {
+    .contacto{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.existencia{
+    padding-top: 8rem;
+ }
+
+ .separacion{
+    padding: 5rem;
+}
+
+@media(min-width: 768px) {
+    .existencia{
+        padding-top: 5.5rem;
+     }
+
+     .separacion{
+        padding: 4rem;
+    }
+}
+
+

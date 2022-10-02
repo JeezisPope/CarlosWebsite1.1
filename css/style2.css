@@ -1,0 +1,326 @@
+:root {
+    /*Codigo para definir "variables"*/
+    --blanco: #ffffff;
+    --oscuro: #000000;
+    --primario: #fff200;
+    --secundario: #014f58;
+    --gris: #414141;
+}
+
+/*Usar ese code para todos los proyectos*/
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    /*scroll-snap-type: y proximity;  Este Comando es utilizado para que el mouse vaya por las secciones*/
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--blanco);
+    font-family: 'Raleway', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.main {
+    padding-bottom: 2rem;
+}
+
+.servicios,
+.navegacion_principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    background-size: cover;
+}
+
+#particles-js {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    margin: 0px;
+    z-index: -1;
+    background-color: #000000;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+@media(min-width: 768px) {
+    #particles-js {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        margin: 0px;
+        z-index: -1;
+        background-color: #000000;
+        background-size: cover;
+        opacity: 0.7;
+    }
+}
+
+@media(min-width: 768px) {
+    body {
+        overflow-anchor: none;
+    }
+}
+
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5rem;
+}
+
+
+
+@media(min-width: 768px) {
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 20rem;
+        padding-right: 20rem;
+    }
+
+    .navegacion a {
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+    }
+
+}
+
+.centrado {
+    display: grid;
+    justify-content: center;
+}
+
+.navegacion a {
+    text-decoration: none;
+}
+
+.links {
+    text-align: center;
+    color: #ffffff;
+    transition: color .5s ease;
+}
+
+.links:hover,
+.navegacion--activo {
+    cursor: pointer;
+    color: var(--primario);
+    
+}
+
+.video {
+    width: 20rem;
+    border-radius: 100%;
+}
+
+@media(min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 8rem;
+    }
+
+    .imagen_presentacion {
+        width: 10rem;
+        border-radius: 5%;
+        align-items: center;
+    }
+}
+
+.grid {
+    display: grid;
+}
+
+.imagen_presentacion {
+    width: 50rem;
+    border-radius: 5%;
+}
+
+.btn_inicio {
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Courier Prime', monospace;
+    background-color: var(--gris);
+    color: var(--blanco);
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: .5rem;
+    border: none;
+
+    /*    transition: background-color 2s ease-in-out;*/
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #1f1f1f;
+    color: #fff200;
+    font-weight: bold;
+
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: auto;
+    padding-bottom: 5rem;
+}
+
+.contenedor__proyectos__uno {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/Free_Lancer.jpg);
+    background-size: cover;
+    padding: 10rem;
+    border-radius: 5%;
+    filter: blur(4px);
+    text-align: center;
+    margin: 2rem;
+
+}
+
+
+.zoom {
+    transition: .5s;
+}
+
+.zoom:hover {
+    transform: scale(115%);
+}
+
+.contenedor__proyectos__uno:hover {
+    cursor: pointer;
+}
+
+
+.contenedor__proyectos__dos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/FrontEnd_Store.jpg);
+    background-size: cover;
+    padding: 10rem;
+    border-radius: 5%;
+    filter: blur(4px);
+    text-align: center;
+    margin: 2rem;
+}
+
+.contenedor__proyectos__dos:hover {
+    cursor: pointer;
+    -webkit-animation: shake 1ms;
+    animation: shake 1ms;
+
+}
+
+.contenedor__proyectos__tres {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/CarlosWebsite.jpg);
+    background-size: cover;
+    padding: 10rem;
+    border-radius: 5%;
+    filter: blur(4px);
+    text-align: center;
+    margin: 2rem;
+}
+
+.contenedor__proyectos__tres:hover {
+    cursor: pointer;
+    -webkit-animation: shake 1ms;
+    animation: shake 1ms;
+
+}
+
+.texto__encima {
+    position: relative;
+    text-align: left;
+    margin-bottom: 5rem;
+}
+
+.img_proyecto {
+    filter: blur(4px);
+    border-radius: 2rem;
+}
+
+.skill-contenedor h1 {
+    font-size: 2.2rem;
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-contenedor h3 {
+    text-align: justify;
+}
+
+.skill-contenedor a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.skill-contenedor h2 {
+    font-size: 2rem;
+    font-family: 'Bungee Hairline', cursive;
+    font-weight: bold;
+}
+
+
+.lista {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .dos__columnas {
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .dos_columnas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .tres__columnas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cuatro__columnas {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5rem;
+    }
+}
+
+footer {
+    padding: 3rem;
+}
